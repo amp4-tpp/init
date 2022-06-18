@@ -5,18 +5,18 @@ read -sp 'GH Password: ' passvar
 echo
 {
   echo Clone psi core
-  git clone --quiet https://$uservar:$passvar@github.com/amp3-tpp/transparent-psi.git > /dev/null
+  git clone --quiet https://$uservar:$passvar@github.com/amp4-tpp/transparent-psi.git > /dev/null
 } || {
   echo Auth error
   exit $1
 }
 
 echo Clone psi results
-git clone --quiet https://$uservar:$passvar@github.com/amp3-tpp/transparent-psi-results.git > /dev/null
+git clone --quiet https://$uservar:$passvar@github.com/amp4-tpp/transparent-psi-results.git > /dev/null
 echo Clone psi images
-git clone --quiet https://$uservar:$passvar@github.com/amp3-tpp/transparent-psi-images.git > /dev/null
+git clone --quiet https://$uservar:$passvar@github.com/amp4-tpp/transparent-psi-images.git > /dev/null
 echo Clone psi languages
-git clone --quiet https://$uservar:$passvar@github.com/amp3-tpp/transparent-psi-languages.git > /dev/null
+git clone --quiet https://$uservar:$passvar@github.com/amp4-tpp/transparent-psi-languages.git > /dev/null
 echo
 echo Install core/client
 cd transparent-psi/client && npm i --silent > /dev/null && cd ../../
